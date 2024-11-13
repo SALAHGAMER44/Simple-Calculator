@@ -31,6 +31,26 @@
     </div>
   </div>
 
-  <script src="/app.js"></script>
+  <script src="/app.js">
+    const screen = document.getElementById("screen");
+
+    function updateScreen(input) {
+      screen.value += input;
+    }
+    
+    function clearScreen() {
+      screen.value = "";
+    }
+    
+    function calc() {
+      try {
+        screen.value = eval(screen.value);
+      }
+      
+      catch (error) {
+        screen.value = "Error";
+      }
+    }
+  </script>
 </body>
 </html>
