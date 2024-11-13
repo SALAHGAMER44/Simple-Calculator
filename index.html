@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="calculator">
+    <input id="screen" readonly>
+    <div class="keys">
+      <button onclick="updateScreen('+')" class="op">+</button>
+      <button onclick="updateScreen('7')">7</button>
+      <button onclick="updateScreen('8')">8</button>
+      <button onclick="updateScreen('9')">9</button>
+      <button onclick="updateScreen('-')" class="op">-</button>
+      <button onclick="updateScreen('4')">4</button>
+      <button onclick="updateScreen('5')">5</button>
+      <button onclick="updateScreen('6')">6</button>
+      <button onclick="updateScreen('*')" class="op">*</button>
+      <button onclick="updateScreen('1')">1</button>
+      <button onclick="updateScreen('2')">2</button>
+      <button onclick="updateScreen('3')">3</button>
+      <button onclick="updateScreen('/')" class="op">/</button>
+      <button onclick="updateScreen('0')">0</button>
+      <button onclick="updateScreen('.')">.</button>
+      <button onclick="calc()">=</button>
+      <button onclick="clearScreen()" class="op">C</button>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
